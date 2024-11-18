@@ -13,8 +13,8 @@ export default function ContactUs() {
                     Contact us
                   </h2>
                   <p className="text-md mb-6">
-                    Have a question, feedback, or collaboration in mind? Connect
-                    with the developer community or get in touch with us
+                    Have a question or feedback in mind? Connect
+                    with the service providers or get in touch with us
                     directly.
                   </p>
                   <form className="space-y-6">

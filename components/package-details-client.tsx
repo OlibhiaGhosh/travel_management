@@ -7,8 +7,9 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, MapPin, Clock, Star, Users } from "lucide-react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 export default function PackageDetailsClient({ packages } : any) {
+  const router = useRouter();
   const { id } = useParams();
   const selectedPackage = packages.find((p : any) => p.id === parseInt(id as string));
 
@@ -121,7 +122,7 @@ export default function PackageDetailsClient({ packages } : any) {
                   className="w-full rounded-md border border-gray-300 p-2"
                 />
               </div>
-              <Button className="w-full">Book Now</Button>
+              <Button className="w-full" onClick={() => {router.push('/auth/sign-up')}}>Book Now</Button>
             </div>
           </Card>
         </div>
