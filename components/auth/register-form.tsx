@@ -24,8 +24,12 @@ import { Label } from "@/components/ui/label";
 import { FormError } from "../form-error";
 import { FormSuccess } from "../form-success";
 import { User, Building2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+
+
 
 export const RegisterForm = () => {
+    const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const [error, setError] = useState<string | undefined>("");
     const [success, setSuccess] = useState<string | undefined>("");
@@ -130,7 +134,7 @@ export const RegisterForm = () => {
                                 defaultValue="customer"
                                 onValueChange={(value) => {
                                     setUserType(value as "customer" | "agency");
-                                    form.setValue("role", value); // Update role field
+                                    form.setValue("role", value as "customer" | "agency"); // Update role field
                                 }}
                                 className="grid grid-cols-2 gap-4"
                             >
@@ -187,9 +191,9 @@ export const RegisterForm = () => {
                     </div>
 
                     <FormError message={error} />
-                    <FormSuccess message={success} />
+                    {/* <FormSuccess message={success} /> */}
 
-                    <Button disabled={isPending} type="submit" className="w-full">
+                    <Button disabled={isPending} type="submit" className="w-full" onClick={()=>{success?router.push('/auth/log-in'):""}}>
                         Sign Up
                     </Button>
                 </form>

@@ -19,10 +19,12 @@ import { FormError } from "../form-error";
 import { FormSuccess } from "../form-success";
 import { Login } from "@/actions/login";
 import { useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
+
 
 
 export const LoginForm = () => {
-
+    const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const [error, setError] = useState<string | undefined >("");
     const [success, setSuccess] = useState<string | undefined >("");
@@ -99,8 +101,8 @@ export const LoginForm = () => {
                         />
                     </div>
                     <FormError message={error} />
-                    <FormSuccess message={success} />
-                    <Button disabled={isPending} type="submit" className="w-full">
+                    {/* <FormSuccess message={success} /> */}
+                    <Button disabled={isPending} type="submit" className="w-full" onClick={()=>{success?router.push('/'):""}}>
                         Login
                     </Button>
                 </form>
