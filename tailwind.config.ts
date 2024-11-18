@@ -15,6 +15,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        '70':'70',
+        '60':'60'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

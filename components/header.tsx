@@ -11,7 +11,7 @@ export default function Header() {
   let isAuthorized = false;
 
   return (
-    <header className="px-10 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="px-10 sticky top-0 z-60 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex justify-between items-center h-24  ">
         <Link href="/" className="flex items-center space-x-2">
           <Plane className="h-6 w-6" />
