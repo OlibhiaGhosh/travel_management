@@ -25,7 +25,7 @@ export const packages = [
     price: 2499,
     rating: 4.9,
     reviews: 189,
-    image: "https://images.unsplash.com/photo-1531795040376-41e181dc2537",
+    image: "https://images.unsplash.com/photo-1717337074802-3c3f7276c5a5?",
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ export const packages = [
     price: 699,
     rating: 4.4,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1533423996375-f914df98bcd2",
+    image: "https://images.unsplash.com/photo-1615126364386-74444a425173",
   },
   {
     id: 7,
