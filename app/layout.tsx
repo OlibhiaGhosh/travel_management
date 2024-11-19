@@ -8,7 +8,7 @@ import Header from '@/components/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Wanderlust - Your Travel Companion',
+  title: 'Travelia',
   description: 'Discover amazing tour packages worldwide',
 };
 

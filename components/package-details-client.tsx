@@ -123,7 +123,7 @@ export default function PackageDetailsClient({ packages } : any) {
                 />
               </div>
               <Button className="w-full" onClick={() => {router.push('/auth/sign-up')}}>Book Now</Button>
-              <Button className="w-full" onClick={() => {router.push('/auth/sign-up')}}>Apply for customized package</Button>
+              <Button className="w-full" onClick={() => {router.push('/customized-packages')}}>Apply for customized package</Button>
             </div>
           </Card>
         </div>
