@@ -1,10 +1,9 @@
 "use client";
 import ChoosedPackages from "@/components/choosed-packages";
-import PackageDetailsClient from "..//../components/package-details-client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-// Server-side component to pass `packages` data to the client component
+
 export default function PackageDetailsPage() {
   const searchParams = useSearchParams();
   const [packageData, setPackageData] = useState([]);
@@ -25,9 +24,3 @@ export default function PackageDetailsPage() {
     </div>
   );
 }
-
-// generateStaticParams function
-// export async function generateStaticParams() {
-//   // Create an array of id values to pre-render
-//   return packages.map((pkg:any) => ({ id: pkg?.id.toString() }));
-// }

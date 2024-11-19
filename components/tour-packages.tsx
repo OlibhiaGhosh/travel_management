@@ -16,6 +16,7 @@ export default function TourPackages() {
   const [priceRange, setPriceRange] = useState([0, 5000]);
   const [selectedType, setSelectedType] = useState("all");
 
+
   const filteredPackages = packages.filter((pkg) => {
     const matchesSearch = pkg.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       pkg.description.toLowerCase().includes(searchQuery.toLowerCase());
