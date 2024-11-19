@@ -3,53 +3,46 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
-import { Plane, Map, Phone, User } from "lucide-react";
+import { Plane, Map, Phone, User, Divide } from "lucide-react";
 import Link from "next/link";
+
 
 export default function Header() {
   let isAuthorized = false;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex justify-evenly items-center gap-80 h-24  ">
+    <header className="px-10 sticky top-0 z-60 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex justify-between items-center h-24  ">
         <Link href="/" className="flex items-center space-x-2">
           <Plane className="h-6 w-6" />
           <span className="text-xl font-bold">Travelia</span>
         </Link>
-
-        {isAuthorized === true ?
           <NavigationMenu>
           <NavigationMenuList className="flex gap-10">
             <NavigationMenuItem className="hover:underline-offset-2">
-              <Link href = "./" target="_self">
+              <Link href = "#Explore" target="_self">
                 <NavigationMenuLink className="group flex items-center gap-2 font-medium hover:underline ease-in-out">
-                  <Map className="h-6 w-6" />
-                  Destinations
+                  <Map className="h-8 w-8" />
+                  <div>Explore</div>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link href = "" >
+              <Link href = "#Contact-us" >
                 <NavigationMenuLink className="group flex items-center gap-2 font-medium hover:underline ease-in-out" >
-                  <Phone className="h-6 w-6" />
+                  <Phone className="h-8 w-8" />
                   Support
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu> 
-        : <>
-        <div className="w-44" />
-        </>
-        }
 
         <div className="flex items-center gap-4">
           <ModeToggle />
-          <Button variant="outline" size="icon">
-
-            <Link href={"/auth"}><User className="h-4 w-4" /></Link>
-
+          <Button id = "SignUp" variant={isAuthorized?"outline":null} size={isAuthorized?"icon":null}>
+            <Link href={"/auth/sign-up"}> {isAuthorized?<User className="h-8 w-8" />: <div className="bg-blue-600 text-white text-md font-bold py-3 px-5 rounded-xl">SignUp</div>}</Link>
           </Button>
         </div>
       </div>
