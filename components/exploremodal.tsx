@@ -29,9 +29,9 @@ export default function ExploreModal() {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 text-2xl font-semibold px-8">
+          <button className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 text-2xl font-semibold px-8">
             Explore
-          </Button>
+          </button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
