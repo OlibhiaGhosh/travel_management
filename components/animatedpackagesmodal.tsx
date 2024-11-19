@@ -112,11 +112,6 @@ export function AnimatedModalDemo({ pkg }: any) {
             </div>
           </ModalContent>
           <ModalFooter className="gap-4">
-            <button onClick={() => {
-                route.back();
-            }} className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28 hover:bg-black hover:text-white">
-              Cancel
-            </button>
             <Link href={`/packages/${pkg?.id}`}>
               <Button variant="outline" className="bg-black text-white">
                 View Details
