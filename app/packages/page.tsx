@@ -18,7 +18,7 @@ export default function PackageDetailsPage() {
     }
   }, [searchParams]);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
       {packageData.map((pkg: any) => (
         <ChoosedPackages key={pkg?.id} pkg={pkg} />
       ))}
