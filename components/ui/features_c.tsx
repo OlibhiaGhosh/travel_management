@@ -6,32 +6,32 @@ const FocusCardsDemo = () => {
       {
         title: "Forest Adventure",
         src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "This is a beautiful description of this place",
+        description: "Experience the thrilling adventures of the forest",
       },
       {
         title: "Valley of life",
         src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "This is a beautiful description of this place",
+        description: "Valleys are beautiful but dangerous like our lives with a little thrill",
       },
       {
-        title: "Sala behta hi jayega",
+        title: "Depth of The Blues",
         src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "This is a beautiful description of this place",
+        description: "Explore another world beneath the sea level",
       },
       {
-        title: "Camping is for pros",
+        title: "Comfort of flames",
         src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "This is a beautiful description of this place",
+        description: "Feel the comfort and warmth of the Campfire on a cold night",
       },
       {
         title: "The road not taken",
         src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "This is a beautiful description of this place",
+        description: "Discoveries are made on that road which are not been taken before",
       },
       {
-        title: "The First Rule",
+        title: "Wind's knife",
         src: "https://assets.aceternity.com/the-first-rule.png",
-        description: "This is a beautiful description of this place",
+        description: "Experience the lonely wind of the Northern Sea which  will pierce the heart",
       },
     ];
   
